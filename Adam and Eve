@@ -1,0 +1,34 @@
+My soloution:
+class God{
+/**
+ * @returns Human[]
+ */
+  static create(){
+    // code
+      const adam = new Man();
+const eve= new Woman();
+return [adam,eve];
+  }
+}
+class Human{
+
+}
+class Man extends Human{
+  
+}
+class Woman extends Human{
+  
+}
+
+Best Practice: 
+class God{
+/**
+ * @returns Human[]
+ */
+  static create(){
+    return [new Man, new Woman];
+  }
+}
+class Human{}
+class Man extends Human{}
+class Woman extends Human{}
